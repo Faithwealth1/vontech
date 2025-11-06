@@ -6,7 +6,7 @@ interface HeroSectionProps {
   imageAlt?: string;
 }
 
-export const HeroSectionfarmer: React.FC<HeroSectionProps> = ({ 
+export const HeroSectionFarmer: React.FC<HeroSectionProps> = ({ 
   title, 
   imageUrl, 
   imageAlt = "" 
@@ -25,4 +25,4 @@ export const HeroSectionfarmer: React.FC<HeroSectionProps> = ({
   );
 };
 
-export default HeroSectionfarmer;
+export default HeroSectionFarmer;
