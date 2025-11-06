@@ -1,5 +1,5 @@
 import React from 'react';
-import  HeroSectionfarmer  from './HeroSectionFarmer';
+import  HeroSectionFarmer  from './HeroSectionfarmer';
 import  ContentSectionfarmer  from './ContentSectionfarmer';
 import  TestimonialSectionfarmer  from './TestimonialSectionfarmer';
 import  CallToActionSectionfarmer  from './CallToActionSectionfarmer';
@@ -7,7 +7,7 @@ import  CallToActionSectionfarmer  from './CallToActionSectionfarmer';
 export const WriteUpSection: React.FC = () => {
   return (
     <article className="flex flex-col justify-center items-start gap-10 self-stretch bg-[#FBFBFB] pt-20 pb-20 px-20 max-md:gap-8 max-md:pt-16 max-md:pb-[60px] max-md:px-10 max-sm:gap-6 max-sm:pt-12 max-sm:pb-10 max-sm:px-5">
-      <HeroSectionfarmer
+      <HeroSectionFarmer
         title="Complete Farmer: Enabling Smart Agriculture through AWS IoT Integration"
         imageUrl="farmer-cs.png"
         imageAlt="Complete Farmer IoT Core architecture diagram"
