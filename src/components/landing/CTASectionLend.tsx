@@ -1,5 +1,5 @@
 import React from 'react';
-import ctaImage from '@/assets/cta.png';
+import ctaImage from '@/assets/cta copy.png';
 
 export const CTASectionLend: React.FC = () => {
   return (
