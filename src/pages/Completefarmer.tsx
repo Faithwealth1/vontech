@@ -5,14 +5,14 @@ import  Footer  from '@/components/landing/Footer';
 
 const Index = () => {
   return (
-    <>
+     <div className="bg-white relative flex flex-col overflow-hidden items-stretch">
       <Header />
-      <main className="min-h-screen">
+      <main className="">
 a<WriteUpSection />
         <CTABanner />
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -4,6 +4,7 @@ import { CaseStudyCard } from './CaseStudyCard';
 export const CaseStudies: React.FC = () => {
   const caseStudies = [
     {
+      link: 'lendsqr',
       title: 'Lendsqr',
       description: 'How Vontech Helped Lendsqr Build a High-Accuracy, Scalable Loan Scoring System, Without Breaking the Bank',
       backgroundColor: 'bg-[#14367D]',
@@ -24,19 +25,23 @@ export const CaseStudies: React.FC = () => {
             </clipPath>
           </defs>
         </svg>
-      )
+      ),
+    
     },
     {
+      link: 'completefarmer',
       title: 'Complete Farmer',
       description: 'Complete Farmer: Enabling Smart Agriculture through AWS IoT Integration',
       image: 'complete farmer.png'
     },
     {
+      link: 'carAid',
       title: 'CarAid',
       description: 'Revolutionizing Roadside Assistance: CarAid\'s Cloud Transformation with Vontech Group & AWS',
       image: 'CarAid.png'
     },
     {
+      link: 'bamboo',
       title: 'Bamboo',
       description: 'Accelerating Fintech Innovation: How Vontech Group Leveraged AWS to Build Bamboo\'s Stock Recommender POC',
       backgroundColor: 'bg-[#F2F4F3]',
@@ -49,6 +54,7 @@ export const CaseStudies: React.FC = () => {
       )
     },
     {
+      link: 'adhome',
       title: 'Adhome Solutions',
       description: 'Migrating to a Secure and Scalable Future: How Vontech Group is Empowering Adhome Solutions with AWS',
       backgroundColor: 'bg-[#038A52]',
@@ -64,6 +70,7 @@ export const CaseStudies: React.FC = () => {
       )
     },
     {
+      link: 'tusenti',
       title: 'Tusenti',
       description: 'Powering Mobile Money Innovation: How Vontech Group is Building a Secure and Scalable AWS Infrastructure for Tusenti',
       backgroundColor: 'bg-[#F2F4F3]',
@@ -88,6 +95,7 @@ export const CaseStudies: React.FC = () => {
             image={study.image}
             backgroundColor={study.backgroundColor}
             logo={study.logo}
+            link={study.link || '#'}
           />
         ))}
       </div>

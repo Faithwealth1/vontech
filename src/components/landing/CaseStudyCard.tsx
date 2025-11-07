@@ -6,16 +6,20 @@ interface CaseStudyCardProps {
   image?: string;
   backgroundColor?: string;
   logo?: React.ReactNode;
+  link: string; 
+
 }
 
 export const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
   title,
   description,
-  image,
+  image, 
   backgroundColor,
-  logo
+  logo,
+  link
 }) => {
   return (
+  <a href={link} >
     <article className="flex w-[410px] flex-col items-start rounded-[30px] max-md:w-full max-md:max-w-[410px] hover:transform hover:scale-105 transition-transform duration-300">
       <div 
         className={`flex w-[410px] h-[242px] justify-center items-center gap-2.5 p-2.5 rounded-[30px_30px_0_0] max-md:w-full ${backgroundColor || 'bg-gray-100'}`}
@@ -39,5 +43,6 @@ export const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
         </p>
       </div>
     </article>
+    </a>
   );
 };
