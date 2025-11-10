@@ -3,7 +3,7 @@ import tusentiImage from '@/assets/tusenti-banner.png';
 
 export const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-start gap-10 w-full max-sm:gap-[30px]">
+  <section className="flex flex-col items-start gap-10 w-full pt-10 md:pt-20 lg:pt-28 max-sm:gap-[30px]">
       <h1 className="w-full text-[#181818] text-5xl font-bold leading-[57.6px] text-left max-md:text-4xl max-sm:text-3xl">
         Powering Mobile Money Innovation: How Vontech Group is Building a Secure and Scalable AWS Infrastructure for Tusenti
       </h1>

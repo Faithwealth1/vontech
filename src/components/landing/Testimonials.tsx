@@ -24,12 +24,12 @@ export const Testimonials: React.FC = () => {
   ];
 
   return (
-    <section className="flex flex-col items-start gap-20 self-stretch w-full bg-[#FBFBFB] pt-[60px] pb-[120px] px-20 max-md:pt-10 max-md:pb-20 max-md:px-10 max-sm:pt-[30px] max-sm:pb-[60px] max-sm:px-5">
-      <div className="flex flex-col items-start gap-[60px] self-stretch max-w-screen-xl w-full mx-auto my-0">
-        <h2 className="self-stretch text-center text-4xl font-bold leading-[45px] bg-clip-text max-sm:text-[28px] text-[#181818]">
+    <section className="flex flex-col items-start gap-10 md:gap-20 self-stretch w-full bg-[#FBFBFB] pt-[30px] md:pt-[60px] pb-[60px] md:pb-[120px] px-5 sm:px-10 lg:px-20">
+      <div className="flex flex-col items-start gap-8 md:gap-[60px] self-stretch max-w-screen-xl w-full mx-auto my-0">
+        <h2 className="self-stretch text-center text-[28px] md:text-4xl font-bold leading-tight md:leading-[45px] text-[#181818]">
           Testimonials
         </h2>
-        <div className="flex w-full justify-between items-center gap-5 max-md:flex-col max-md:gap-[30px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard
               key={index}
@@ -44,3 +44,4 @@ export const Testimonials: React.FC = () => {
     </section>
   );
 };
+export default Testimonials;

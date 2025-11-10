@@ -3,9 +3,9 @@ import { Button } from './Button';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="flex items-center gap-[75px] self-stretch w-full bg-[#FBFBFB] pt-[250px] pb-20 px-20 max-md:pt-[200px] max-md:pb-[60px] max-md:px-10 max-sm:pt-[150px] max-sm:pb-10 max-sm:px-5">
-      <div className="flex justify-center items-center gap-[90px] flex-[1_0_0] max-w-screen-xl mx-auto my-0 max-md:flex-col max-md:gap-[60px] max-sm:gap-10">
-        <div className="flex w-[557px] flex-col justify-center items-start gap-[60px] max-md:w-full">
+  <section className="flex items-center gap-[75px] self-stretch w-full bg-[#FBFBFB] pt-[250px] pb-20 px-20 max-md:pt-[200px] max-md:pb-[60px] max-md:px-10 max-sm:pt-[150px] max-sm:pb-10 max-sm:px-5 overflow-hidden">
+      <div className="flex justify-center items-center gap-[90px] flex-[1_0_0] max-w-screen-xl mx-auto my-0 max-lg:flex-col max-lg:gap-[60px] max-sm:gap-10">
+        <div className="flex w-[557px] max-lg:w-full flex-col justify-center items-start gap-[60px]">
           <div className="flex flex-col items-start gap-5 self-stretch max-sm:gap-[15px]">
             <h1 className="self-stretch text-[#181818] text-5xl font-bold leading-[57.6px] max-md:text-4xl max-sm:text-[28px]">
               Our Case Studies
@@ -21,7 +21,7 @@ export const Hero: React.FC = () => {
             </svg>
           </Button>
         </div>
-        <div className="w-[566px] h-[528px] relative max-md:w-full max-md:h-auto max-md:max-w-[500px]">
+        <div className="w-[566px] max-lg:w-full h-[528px] relative max-md:w-full max-md:h-auto max-md:max-w-[500px]">
           <img
             src="case-study.png"
             alt="Case study visualization"
@@ -30,7 +30,7 @@ export const Hero: React.FC = () => {
           <img
             src="analytics.png"
             alt="Analytics dashboard"
-            className="flex w-[261px] h-[335px] flex-col items-start shrink-0 absolute rounded-[30px] left-0 top-[193px] max-md:w-[70%] max-md:h-auto max-md:relative max-md:top-[-50px] max-md:left-0"
+            className="flex w-[261px] h-[335px] flex-col items-start shrink-0 absolute rounded-[30px] left-0 top-[193px] max-lg:w-[45%] max-md:w-[60%] max-md:h-auto max-md:relative max-md:top-[-50px] max-md:left-0"
           />
         </div>
       </div>

@@ -68,7 +68,7 @@ const Footer = () => {
                 <img
                   src={social.icon}
                   alt={social.alt}
-                  className="aspect-[1] object-contain w-[25px] self-stretch my-auto"
+                  className="aspect-[1] object-contain w-[45px] self-stretch my-auto"
                 />
               </a>
             ))}

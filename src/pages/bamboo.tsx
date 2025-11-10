@@ -5,7 +5,7 @@ import SolutionSection from  '@/components/landing/SolutionSectionbamboo';
 import ResultsSection from '@/components/landing/ResultsSectionbamboo';
 import TestimonialSection from '@/components/landing/TestimonialSectionbamboo';
 import FinalThoughtsSection from '@/components/landing/FinalThoughtsSectionbamboo';
-import CTASection from '@/components/landing/CTASection';
+import CTASection from '@/components/landing/CTASectionbamboo';
 import Footer from '@/components/landing/Footer';
 
 const Index = () => {

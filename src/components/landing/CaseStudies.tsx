@@ -9,7 +9,7 @@ export const CaseStudies: React.FC = () => {
       description: 'How Vontech Helped Lendsqr Build a High-Accuracy, Scalable Loan Scoring System, Without Breaking the Bank',
       backgroundColor: 'bg-[#14367D]',
       logo: (
-        <svg width="286" height="61" viewBox="0 0 286 61" fill="none" xmlns="http://www.w3.org/2000/svg" className="lendsqr-logo">
+        <svg width="286" height="61" viewBox="0 0 286 61" fill="none" xmlns="http://www.w3.org/2000/svg" className="lendsqr-logo max-h-[200px] w-auto h-auto object-contain">
           <g clipPath="url(#clip0_413_2679)">
             <mask id="mask0_413_2679" style={{maskType:'luminance'}} maskUnits="userSpaceOnUse" x="0" y="0" width="286" height="61">
               <path d="M285.5 0.671875H0.5V60.6719H285.5V0.671875Z" fill="white"/>
@@ -49,7 +49,7 @@ export const CaseStudies: React.FC = () => {
         <img
           src="bamboo.png"
           alt="Bamboo logo"
-          className="w-[150px] h-[150px] shrink-0"
+          className="max-h-[200px] w-auto h-auto object-contain"
         />
       )
     },
@@ -59,7 +59,7 @@ export const CaseStudies: React.FC = () => {
       description: 'Migrating to a Secure and Scalable Future: How Vontech Group is Empowering Adhome Solutions with AWS',
       backgroundColor: 'bg-[#038A52]',
       logo: (
-        <svg width="316" height="81" viewBox="0 0 316 81" fill="none" xmlns="http://www.w3.org/2000/svg" className="adhome-logo">
+        <svg width="316" height="81" viewBox="0 0 316 81" fill="none" xmlns="http://www.w3.org/2000/svg" className="adhome-logo max-h-[200px] w-auto h-auto object-contain">
           <path d="M69.4352 33.6282C71.0241 30.5401 73.1932 28.1658 75.9447 26.5021C78.6951 24.8394 81.7545 24.0081 85.1228 24.0081C87.6838 24.0081 90.1263 24.5666 92.4515 25.6826C94.7746 26.7997 96.6251 28.2844 98.0008 30.1368V11.3936H108.104V64.1299H98.0008V58.2868C96.7672 60.2352 95.0351 61.803 92.8068 62.9902C90.5774 64.1773 87.9916 64.7715 85.0518 64.7715C81.7308 64.7715 78.6951 63.9164 75.9447 62.2063C73.1932 60.4962 71.0241 58.0852 69.4352 54.9734C67.8442 51.8615 67.0508 48.286 67.0508 44.248C67.0508 40.2563 67.8442 36.7174 69.4352 33.6282ZM96.6487 38.1537C95.6993 36.4198 94.4193 35.0893 92.8068 34.1631C91.1942 33.2368 89.4632 32.7732 87.6138 32.7732C85.7633 32.7732 84.056 33.225 82.4908 34.1264C80.9256 35.03 79.6553 36.3487 78.6844 38.0814C77.7123 39.8163 77.2257 41.8704 77.2257 44.2458C77.2257 46.6223 77.7123 48.7001 78.6844 50.4814C79.6553 52.2626 80.9364 53.6288 82.5263 54.5787C84.1152 55.5297 85.8096 56.0042 87.6138 56.0042C89.4632 56.0042 91.1942 55.5405 92.8068 54.6143C94.4193 53.6881 95.7003 52.3586 96.6487 50.6237C97.5971 48.8899 98.0708 46.811 98.0708 44.3881C98.0708 41.9653 97.5971 39.8886 96.6487 38.1537Z" fill="white"/>
           <path d="M143.392 26.0384C145.715 27.3452 147.53 29.2699 148.835 31.8114C150.139 34.3539 150.791 37.4054 150.791 40.969V64.1299H140.83V42.3222C140.83 39.1866 140.047 36.7757 138.482 35.0893C136.917 33.404 134.782 32.5586 132.079 32.5586C129.327 32.5586 127.158 33.4029 125.569 35.0893C123.979 36.7757 123.185 39.1866 123.185 42.3222V64.1299H113.225V11.3936H123.185V29.5665C124.465 27.8563 126.173 26.5139 128.308 25.5403C130.442 24.5666 132.814 24.0792 135.423 24.0792C138.411 24.0792 141.068 24.7326 143.392 26.0384Z" fill="white"/>
           <path d="M162.886 62.2406C159.851 60.5552 157.467 58.1669 155.735 55.0788C154.004 51.9907 153.139 48.4281 153.139 44.389C153.139 40.3509 154.028 36.7884 155.807 33.6992C157.586 30.611 160.016 28.2238 163.099 26.5374C166.182 24.8521 169.621 24.0078 173.416 24.0078C177.21 24.0078 180.649 24.8521 183.732 26.5374C186.814 28.2238 189.246 30.611 191.024 33.6992C192.803 36.7884 193.693 40.3509 193.693 44.389C193.693 48.4281 192.779 51.9907 190.953 55.0788C189.128 58.1669 186.66 60.5552 183.555 62.2406C180.447 63.9269 176.974 64.7701 173.131 64.7701C169.338 64.7712 165.922 63.928 162.886 62.2406ZM178.219 54.7575C179.808 53.8798 181.076 52.5611 182.025 50.8024C182.973 49.046 183.447 46.9078 183.447 44.389C183.447 40.6366 182.462 37.7502 180.495 35.7306C178.527 33.711 176.119 32.7018 173.273 32.7018C170.427 32.7018 168.045 33.7121 166.122 35.7306C164.202 37.7502 163.24 40.6366 163.24 44.389C163.24 48.1424 164.177 51.0289 166.051 53.0474C167.924 55.0669 170.285 56.0762 173.13 56.0762C174.934 56.0772 176.63 55.6373 178.219 54.7575Z" fill="white"/>
@@ -78,7 +78,7 @@ export const CaseStudies: React.FC = () => {
         <img
           src="tusenti_logo.png"
           alt="Tusenti logo"
-          className="w-[267px] h-20 shrink-0"
+          className="max-h-[200px] w-auto h-auto object-contain"
         />
       )
     }
@@ -86,17 +86,18 @@ export const CaseStudies: React.FC = () => {
 
   return (
     <section className="flex flex-col items-start gap-20 self-stretch w-full bg-[#0A0919] pt-[60px] pb-[120px] px-20 max-md:pt-10 max-md:pb-20 max-md:px-10 max-sm:pt-[30px] max-sm:pb-[60px] max-sm:px-5">
-      <div className="flex justify-between items-start content-start gap-y-10 self-stretch flex-wrap max-w-screen-xl w-full mx-auto my-0 max-md:justify-center max-md:gap-[30px] max-sm:gap-5">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 self-stretch max-w-screen-xl w-full mx-auto my-0">
         {caseStudies.map((study, index) => (
-          <CaseStudyCard
-            key={index}
-            title={study.title}
-            description={study.description}
-            image={study.image}
-            backgroundColor={study.backgroundColor}
-            logo={study.logo}
-            link={study.link || '#'}
-          />
+          <div key={index} className="flex justify-center items-stretch">
+            <CaseStudyCard
+              title={study.title}
+              description={study.description}
+              image={study.image}
+              backgroundColor={study.backgroundColor}
+              logo={study.logo}
+              link={study.link || '#'}
+            />
+          </div>
         ))}
       </div>
     </section>

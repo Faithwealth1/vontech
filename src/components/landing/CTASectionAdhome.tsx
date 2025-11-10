@@ -20,7 +20,7 @@ const CTASection: React.FC<CTASectionProps> = ({
       style={{ backgroundImage: `url(${ctaBg})` }}
     >
       <div className="flex flex-col justify-center items-center gap-10 w-full">
-        <div className="w-[868px] text-center text-4xl font-bold leading-[45px] max-md:w-full max-md:text-[28px] max-sm:text-2xl max-sm:w-full text-white">
+    <div className="w-full max-w-[868px] text-center text-4xl font-bold leading-[45px] max-md:text-[28px] max-sm:text-2xl text-white break-words whitespace-normal px-4">
           {title}
         </div>
         <button 
