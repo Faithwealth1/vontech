@@ -41,14 +41,28 @@ const Header = () => {
         <div className="relative">
           <button
             onClick={() => setIsDesktopDropdownOpen(!isDesktopDropdownOpen)}
-            className="flex items-center text-[#181818] text-xl font-medium hover:text-[#FFE21B] transition-colors gap-1"
+            className="flex items-center justify-center text-[#181818] text-xl font-medium hover:text-[#FFE21B] transition-colors"
           >
-            Resources
-            <img
-              src="drop down.svg"
-              alt="Dropdown arrow"
-              className={`w-6 h-6 transition-transform ${isDesktopDropdownOpen ? "rotate-180" : ""}`}
-            />
+            <span>Resources</span>
+            <span className="inline-flex items-center ml-1">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className={`transform transition-transform duration-200 ${isDesktopDropdownOpen ? "rotate-180" : ""}`}
+              >
+                <path
+                  d="M7.5 9.375L3.75 5.625H11.25L7.5 9.375Z"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  strokeWidth="0.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </span>
           </button>
 
           {isDesktopDropdownOpen && (
