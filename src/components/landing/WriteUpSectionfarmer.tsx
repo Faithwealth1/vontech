@@ -6,7 +6,7 @@ import  CallToActionSectionfarmer  from './CallToActionSectionfarmer';
 
 export const WriteUpSection: React.FC = () => {
   return (
-    <article className="flex flex-col justify-center items-start gap-10 self-stretch bg-[#FBFBFB] pt-20 pb-20 px-20 max-md:gap-8 max-md:pt-16 max-md:pb-[60px] max-md:px-10 max-sm:gap-6 max-sm:pt-12 max-sm:pb-10 max-sm:px-5">
+    <article className="flex flex-col justify-center items-start gap-10 self-stretch bg-[#FBFBFB] pt-[180px] pb-20 px-20 max-md:gap-8 max-md:pt-[150px] max-md:pb-[60px] max-md:px-10 max-sm:gap-6 max-sm:pt-[120px] max-sm:pb-10 max-sm:px-5">
       <HeroSectionFarmer
         title="Complete Farmer: Enabling Smart Agriculture through AWS IoT Integration"
         imageUrl="farmer-cs.png"

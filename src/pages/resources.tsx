@@ -1,5 +1,5 @@
 import React from 'react';
-import Header  from '@/components/landing/Header';
+import  Header  from '@/components/landing/Header';
 import { Hero } from '@/components/landing/Hero';
 import { CaseStudies } from '@/components/landing/CaseStudies';
 import { Testimonials } from '@/components/landing/Testimonials';

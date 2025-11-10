@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSectionAdhome = () => {
   return (
-    <section className="flex flex-col justify-center items-start gap-10 w-full bg-[#FBFBFB] pt-[100px] pb-20 px-20 max-md:pt-[80px] max-md:pb-[60px] max-md:px-10 max-sm:pt-[60px] max-sm:pb-10 max-sm:px-5">
+    <section className="flex flex-col justify-center items-start gap-10 w-full bg-[#FBFBFB] pt-[180px] pb-20 px-20 max-md:pt-[150px] max-md:pb-[60px] max-md:px-10 max-sm:pt-[120px] max-sm:pb-10 max-sm:px-5">
       <div className="flex flex-col items-start gap-10 w-full">
         <div className="flex flex-col items-start gap-10 w-full">
           <h1 className="w-full text-[#181818] text-5xl font-bold leading-[57.6px] max-md:text-4xl max-sm:text-[28px] max-sm:leading-[30.8px]">
