@@ -160,20 +160,36 @@ const Header = () => {
 
           {/* Mobile Resources dropdown */}
           <div className="flex flex-col">
-            <div
-              className="flex items-center justify-between cursor-pointer"
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-            >
-              <span className="text-[#181818] text-xl font-medium hover:text-[#097484] transition-colors">
+            <div className="flex items-center justify-between">
+              <a
+                href="/resources"
+                className="text-[#181818] text-xl font-medium hover:text-[#097484] transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Resources
-              </span>
-              <img
-                src="drop down.svg"
-                alt="Dropdown arrow"
-                className={`w-6 transition-transform duration-300 ${
-                  isDropdownOpen ? "rotate-180" : ""
-                }`}
-              />
+              </a>
+              <button
+                type="button"
+                aria-label="Toggle resources submenu"
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                className="text-[#181818] ml-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  className={`w-6 h-6 transition-transform duration-300 ${
+                    isDropdownOpen ? "rotate-180" : ""
+                  }`}
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.06z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
             </div>
 
             {isDropdownOpen && (
