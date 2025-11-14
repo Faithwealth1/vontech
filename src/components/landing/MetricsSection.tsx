@@ -82,7 +82,7 @@ const Statistics = () => {
                 {counters[index]}{stat.suffix}
               </div>
               <div className="flex w-full flex-col items-stretch justify-center mt-5">
-                <h3 className="text-[#181818] text-2xl font-semibold leading-none self-center">
+                <h3 className="text-[#181818] text-2xl font-semibold leading-none self-center whitespace-nowrap">
                   {stat.title}
                 </h3>
                 <p className="text-[#393C3D] text-center text-lg font-normal mt-4">

@@ -30,7 +30,7 @@ import { ValueCard } from '../ui/ValueCard';
       <h2 className="text-center text-4xl font-bold leading-none bg-clip-text max-md:max-w-full">
         Our Core Values
       </h2>
-      <div className="flex w-full items-center gap-[40px_60px] flex-wrap mt-[60px] max-md:max-w-full max-md:mt-10">
+      <div className="flex w-full items-center justify-center gap-[40px_60px] flex-wrap mt-[60px] max-md:max-w-full max-md:mt-10">
         {values.map((value, index) => (
           <ValueCard
             key={index}

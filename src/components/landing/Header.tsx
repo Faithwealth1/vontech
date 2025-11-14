@@ -43,15 +43,20 @@ const Header = () => {
         </a>
 
         {/* Resources dropdown (desktop) */}
-        <div className="relative self-stretch flex items-center gap-[5px] my-auto">
-          <a
-            href="/resources"
-            className="text-[#181818] text-xl font-medium self-stretch my-auto hover:text-[#FFE21B] transition-colors"
+        <div className="relative self-stretch flex items-center gap-[5px] my-auto hover:[&_*]:text-[#FFE21B] group">
+          <button
+            type="button"
+            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            className={`text-xl font-medium self-stretch my-auto transition-colors bg-transparent border-none cursor-pointer p-0 ${
+              isDropdownOpen ? "text-[#FFE21B]" : "text-[#181818] group-hover:text-[#FFE21B]"
+            }`}
           >
             Resources
-          </a>
+          </button>
           <div
-            className="self-stretch flex flex-col overflow-hidden items-center justify-center w-[26px] my-auto pt-1 cursor-pointer text-[#181818]"
+            className={`self-stretch flex flex-col overflow-hidden items-center justify-center w-[26px] my-auto pt-1 cursor-pointer transition-colors ${
+              isDropdownOpen ? "text-[#FFE21B]" : "text-[#181818] group-hover:text-[#FFE21B]"
+            }`}
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
           >
             <svg
@@ -75,40 +80,28 @@ const Header = () => {
           {isDropdownOpen && (
             <div className="absolute top-full left-0 mt-3 bg-white shadow-lg rounded-[15px] p-4 flex flex-col gap-3 w-48 z-20">
               <a
-                href="/lendsqr"
+                href="/resources"
                 className="text-[#181818] hover:text-[#097484] text-lg transition-colors"
               >
-                Lendsqr
+                Case Study
               </a>
               <a
-                href="/Completefarmer"
+                href="/resources"
                 className="text-[#181818] hover:text-[#097484] text-lg transition-colors"
               >
-                Complete Farmer
+                Webinars
               </a>
               <a
-                href="/adhome"
+                href="/resources"
                 className="text-[#181818] hover:text-[#097484] text-lg transition-colors"
               >
-                Adhome
+                Blog
               </a>
               <a
-                href="/caraid"
+                href="/resources"
                 className="text-[#181818] hover:text-[#097484] text-lg transition-colors"
               >
-                Caraid
-              </a>
-              <a
-                href="/bamboo"
-                className="text-[#181818] hover:text-[#097484] text-lg transition-colors"
-              >
-                Bamboo
-              </a>
-              <a
-                href="/tusenti"
-                className="text-[#181818] hover:text-[#097484] text-lg transition-colors"
-              >
-                Tusenti
+                Support Portal
               </a>
             </div>
           )}
@@ -159,20 +152,24 @@ const Header = () => {
           </a>
 
           {/* Mobile Resources dropdown */}
-          <div className="flex flex-col">
-            <div className="flex items-center justify-between">
-              <a
-                href="/resources"
-                className="text-[#181818] text-xl font-medium hover:text-[#097484] transition-colors"
-                onClick={() => setIsMenuOpen(false)}
+          <div className="flex flex-col group">
+            <div className="flex items-center justify-between hover:[&_*]:text-[#FFE21B]">
+              <button
+                type="button"
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                className={`text-xl font-medium transition-colors bg-transparent border-none cursor-pointer p-0 ${
+                  isDropdownOpen ? "text-[#FFE21B]" : "text-[#181818] group-hover:text-[#FFE21B]"
+                }`}
               >
                 Resources
-              </a>
+              </button>
               <button
                 type="button"
                 aria-label="Toggle resources submenu"
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                className="text-[#181818] ml-4"
+                className={`ml-4 transition-colors ${
+                  isDropdownOpen ? "text-[#FFE21B]" : "text-[#181818] group-hover:text-[#FFE21B]"
+                }`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -195,64 +192,44 @@ const Header = () => {
             {isDropdownOpen && (
               <div className="flex flex-col gap-3 mt-3 pl-4">
                 <a
-                  href="/lendsqr"
+                  href="/resources"
                   className="text-[#181818] hover:text-[#097484] text-lg transition-colors"
                   onClick={() => {
                     setIsMenuOpen(false);
                     setIsDropdownOpen(false);
                   }}
                 >
-                  Lendsqr
+                  Case Study
                 </a>
                 <a
-                  href="/Completefarmer"
+                  href="/resources"
                   className="text-[#181818] hover:text-[#097484] text-lg transition-colors"
                   onClick={() => {
                     setIsMenuOpen(false);
                     setIsDropdownOpen(false);
                   }}
                 >
-                  Complete Farmer
+                  Webinars
                 </a>
                 <a
-                  href="/adhome"
+                  href="/resources"
                   className="text-[#181818] hover:text-[#097484] text-lg transition-colors"
                   onClick={() => {
                     setIsMenuOpen(false);
                     setIsDropdownOpen(false);
                   }}
                 >
-                  Adhome
+                  Blog
                 </a>
                 <a
-                  href="/caraid"
+                  href="/resources"
                   className="text-[#181818] hover:text-[#097484] text-lg transition-colors"
                   onClick={() => {
                     setIsMenuOpen(false);
                     setIsDropdownOpen(false);
                   }}
                 >
-                  Caraid
-                </a>
-                <a
-                  href="/bamboo"
-                  className="text-[#181818] hover:text-[#097484] text-lg transition-colors"
-                  onClick={() => {
-                    setIsMenuOpen(false);
-                    setIsDropdownOpen(false);
-                  }}
-                >
-                  Bamboo
-                </a>
-                <a
-                  href="/tusenti"
-                  className="text-[#181818] hover:text-[#097484] text-lg transition-colors"
-                  onClick={() => {
-                    setIsMenuOpen(false);
-                    setIsDropdownOpen(false);
-                  }}
-                >
-                  Tusenti
+                  Support Portal
                 </a>
               </div>
             )}

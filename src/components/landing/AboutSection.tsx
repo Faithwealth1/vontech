@@ -10,7 +10,7 @@ const AboutSection = () => {
           className="absolute h-full w-full object-cover inset-0"
         />
         <div className="relative flex items-center gap-[40px_46px] flex-wrap">
-          <div className="bg-white self-stretch min-w-60 overflow-hidden w-[392px] my-auto rounded-[99999997952px] order-1 md:order-2 md:ml-10">
+          <div className="bg-white self-stretch min-w-60 overflow-hidden w-[392px] my-auto rounded-[99999997952px] order-1 md:order-2 md:ml-auto">
             <img
               src="/teamImage.jpg"
               alt="Team collaboration"

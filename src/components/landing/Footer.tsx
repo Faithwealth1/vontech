@@ -103,8 +103,8 @@ const Footer = () => {
         </nav>
       </div>
       
-      <div className="absolute z-0 flex w-full max-w-[1440px] items-center text-sm text-white font-medium text-center leading-[1.4] justify-between p-5 border-[rgba(25,25,25,1)] border-t right-0 bottom-0 md:px-10">
-        <div className="text-white self-stretch flex-1 shrink basis-[0%] my-auto md:text-xs">
+      <div className="absolute z-0 flex w-full max-w-[1440px] items-center text-sm text-white font-medium text-center leading-[1.4] justify-center p-5 border-[rgba(25,25,25,1)] border-t left-0 right-0 bottom-0 md:px-10">
+        <div className="text-white my-auto md:text-xs">
           Copywrite © 2025 VonTech Group. All Right Reserved.
         </div>
       </div>

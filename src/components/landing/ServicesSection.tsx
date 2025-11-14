@@ -21,12 +21,18 @@ const ServicesSection = () => {
 
   return (
     <section className="justify-center items-stretch z-0 flex w-full flex-col overflow-hidden bg-[#FBFBFB] pt-[60px] pb-[120px] px-20 max-md:max-w-full max-md:pb-[100px] max-md:px-5">
+      {/* Decorative wave pattern placed between Hero and Who We Are (top of Services section) */}
+      <img
+        src="/deco wave pattern.svg"
+        alt="Decorative wave pattern"
+        className="w-full h-auto object-cover mb-6 select-none pointer-events-none"
+      />
       <div className="w-full max-md:max-w-full">
         <h2 className="text-center text-4xl font-bold leading-none bg-clip-text max-md:max-w-full">
           Explore Our Work
         </h2>
         
-        <div className="flex w-full items-center gap-[40px_60px] justify-center flex-wrap mt-20 max-md:max-w-full max-md:mt-10">
+        <div className="flex w-full items-center gap-[40px_60px] justify-between flex-wrap mt-20 max-md:max-w-full max-md:mt-10">
           <button className="aspect-[1/1] object-contain w-[50px] self-stretch shrink-0 my-auto hover:scale-110 transition-transform">
             <img
               src="previous.svg"
@@ -35,13 +41,13 @@ const ServicesSection = () => {
             />
           </button>
           
-          <div className="self-stretch flex min-w-60 items-center gap-[40px_60px] flex-wrap my-auto max-md:max-w-full">
+          <div className="self-stretch flex min-w-60 items-center gap-[40px_60px] justify-center flex-wrap my-auto max-md:max-w-full">
             {services.map((service, index) => (
               <article key={index} className="self-stretch relative flex min-w-60 gap-[-67px] w-[262px] my-auto">
                 <div className="absolute z-0 flex w-[137px] shrink-0 h-[114px] bg-[#294C3C] rounded-[6px_30px] -right-2.5 -top-2.5" />
                 <div className="absolute z-0 flex w-[137px] shrink-0 h-[114px] bg-[#294C3C] rounded-[6px_30px] -left-2.5 -bottom-2.5" />
                 
-                <div className="border shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] z-0 min-w-60 min-h-[360px] w-[262px] bg-white p-[38px] rounded-[30px] border-solid border-[#E0E0E0] hover:shadow-lg transition-shadow max-md:px-5">
+                <div className="border shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] z-0 min-w-60 h-[360px] w-[262px] bg-white p-[38px] rounded-[30px] border-solid border-[#E0E0E0] hover:shadow-lg transition-shadow max-md:px-5">
                   <div className="justify-center items-center flex min-h-[54px] w-[54px] flex-col overflow-hidden h-[54px] bg-[#097484] px-3 rounded-[10px]">
                     <img
                       src={service.icon}

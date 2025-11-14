@@ -103,7 +103,7 @@ const Index = () => {
         {/* Hero Section */}
         <section className="relative">
           <img
-            src="footer bg.png"
+            src="/Heroservice.png"
             alt="VonTech Group Services Hero"
             className="aspect-[1.97] object-contain w-full z-0 min-h-[731px] max-md:max-w-full"
           />

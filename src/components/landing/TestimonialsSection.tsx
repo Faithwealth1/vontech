@@ -20,7 +20,7 @@ const TestimonialsSection = () => {
       text: "My financial institution partnered with VonTech Group to implement robust security measures and ensure compliance in their cloud environment.",
       name: "Dora Florence",
       role: "Financial Institution",
-      avatar: "dora.png"
+      avatar: "Dora1.png"
     }
   ];
 
@@ -50,7 +50,7 @@ const TestimonialsSection = () => {
         </h2>
         
         <div className="flex w-full flex-col items-stretch mt-10 max-md:max-w-full">
-          <div className="flex w-full items-center gap-5 justify-start md:overflow-x-auto flex-nowrap max-md:max-w-full max-md:flex-wrap">
+          <div className="flex w-full items-center gap-5 justify-center md:overflow-x-auto flex-nowrap max-md:max-w-full max-md:flex-wrap">
             {testimonials.map((testimonial, index) => (
               <article key={index} className="border self-stretch min-w-60 overflow-hidden w-[402px] flex-shrink-0 my-auto px-[22px] py-8 rounded-[20px] border-solid border-[#E0E0E0] hover:shadow-lg transition-shadow max-md:px-5">
                 <blockquote className="text-[#097484] text-base font-normal leading-6">
