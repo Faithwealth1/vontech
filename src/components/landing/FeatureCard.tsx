@@ -1,14 +1,19 @@
 import React from 'react';
 
 interface FeatureCardProps {
-  imageSrc: string;
-  alt: string;
+  icon: string;
+  title: string;
+  description: string;
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ imageSrc, alt }) => {
+const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
   return (
-    <article className="items-center shadow-[0_6px_36px_0_rgba(142,142,142,0.15)] self-stretch flex min-w-60 flex-col justify-center aspect-[1] w-[390px] bg-white my-auto px-10 rounded-[30px] max-md:px-5">
-      <img src={imageSrc} alt={alt} className="w-full h-full object-contain" />
+    <article className="shadow-[0_6px_36px_0_rgba(142,142,142,0.15)] self-stretch flex min-w-60 min-h-[360px] flex-col justify-between w-[390px] bg-white my-auto px-10 py-12 rounded-[30px] text-center max-md:w-full max-md:px-6 max-md:py-10">
+      <img src={icon} alt={title} className="w-12 h-12 self-center object-contain" />
+      <h3 className="text-[#181818] text-2xl font-semibold mt-8">{title}</h3>
+      <p className="text-[#4B4E4F] text-base leading-6 mt-4">
+        {description}
+      </p>
     </article>
   );
 };

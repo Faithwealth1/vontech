@@ -1,12 +1,41 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
 
-const Header = () => {
+const MenuIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="w-8 h-8"
+  >
+    <path d="M3 7h18a1 1 0 1 0 0-2H3a1 1 0 1 0 0 2Zm0 6h18a1 1 0 1 0 0-2H3a1 1 0 1 0 0 2Zm0 6h18a1 1 0 1 0 0-2H3a1 1 0 1 0 0 2Z" />
+  </svg>
+);
+
+const CloseIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="w-8 h-8"
+  >
+    <path d="M6.225 4.811A1 1 0 0 0 4.81 6.225L10.586 12l-5.775 5.775a1 1 0 0 0 1.414 1.414L12 13.414l5.775 5.775a1 1 0 0 0 1.414-1.414L13.414 12l5.775-5.775a1 1 0 0 0-1.414-1.414L12 10.586 6.225 4.811Z" />
+  </svg>
+);
+
+interface HeaderProps {
+  variant?: "default" | "darkBg";
+}
+
+const Header: React.FC<HeaderProps> = ({ variant = "default" }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Dropdown state
 
   return (
-    <header className="justify-between items-center absolute z-10 flex w-[1280px] max-w-full gap-5 md:gap-[40px] lg:gap-[100px] md:flex-nowrap -translate-x-2/4 translate-y-[0%] bg-[rgba(255,255,255,0.15)] px-8 py-4 rounded-[30px] left-2/4 top-[20px] md:top-[40px] lg:top-[60px] max-md:px-5 max-md:flex-nowrap">
+    <header
+      className={`justify-between items-center fixed z-10 flex w-[calc(100%-32px)] md:w-[calc(100%-64px)] lg:w-[1280px] max-w-full gap-5 md:gap-[40px] lg:gap-[100px] md:flex-nowrap -translate-x-2/4 translate-y-[0%] px-8 py-4 rounded-[30px] left-2/4 top-[20px] md:top-[40px] lg:top-[60px] max-md:px-5 max-md:flex-nowrap ${
+        variant === "darkBg" ? "bg-gray-700 bg-opacity-90" : "bg-black bg-opacity-80"
+      }`}
+    >
       <img
         src="vontech.png"
         alt="VonTech Group Logo"
@@ -15,47 +44,47 @@ const Header = () => {
 
       {/* Mobile and tablet hamburger menu */}
       <button
-        className="lg:hidden text-[#181818]"
+        className="lg:hidden text-white"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
-        {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
+        {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
       </button>
 
       {/* Desktop navigation */}
       <nav className="self-stretch hidden lg:flex min-w-60 items-center gap-9 my-auto max-md:max-w-full">
         <a
           href="/"
-          className="text-[#181818] text-xl font-medium self-stretch my-auto hover:text-[#FFE21B] transition-colors"
+          className="text-white text-xl font-medium self-stretch my-auto hover:text-[#FFE21B] transition-colors"
         >
           Home
         </a>
         <a
           href="/aboutUs"
-          className="text-[#181818] text-xl font-medium self-stretch my-auto hover:text-[#FFE21B] transition-colors"
+          className="text-white text-xl font-medium self-stretch my-auto hover:text-[#FFE21B] transition-colors"
         >
           About
         </a>
         <a
           href="/services"
-          className="text-[#181818] text-xl font-medium self-stretch my-auto hover:text-[#FFE21B] transition-colors"
+          className="text-white text-xl font-medium self-stretch my-auto hover:text-[#FFE21B] transition-colors"
         >
           Services
         </a>
 
         {/* Resources dropdown (desktop) */}
-        <div className="relative self-stretch flex items-center gap-[5px] my-auto hover:[&_*]:text-[#FFE21B] group">
+        <div className="relative self-stretch flex items-center gap-2 my-auto hover:[&_*]:text-[#FFE21B] group">
           <button
             type="button"
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             className={`text-xl font-medium self-stretch my-auto transition-colors bg-transparent border-none cursor-pointer p-0 ${
-              isDropdownOpen ? "text-[#FFE21B]" : "text-[#181818] group-hover:text-[#FFE21B]"
+              isDropdownOpen ? "text-[#FFE21B]" : "text-white group-hover:text-[#FFE21B]"
             }`}
           >
             Resources
           </button>
           <div
-            className={`self-stretch flex flex-col overflow-hidden items-center justify-center w-[26px] my-auto pt-1 cursor-pointer transition-colors ${
-              isDropdownOpen ? "text-[#FFE21B]" : "text-[#181818] group-hover:text-[#FFE21B]"
+            className={`self-stretch flex flex-col overflow-hidden items-center justify-center w-[22px] my-auto pt-1 cursor-pointer transition-colors ${
+              isDropdownOpen ? "text-[#FFE21B]" : "text-white group-hover:text-[#FFE21B]"
             }`}
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
           >
@@ -109,13 +138,13 @@ const Header = () => {
 
         <a
           href="/careers"
-          className="text-[#181818] text-xl font-medium self-stretch my-auto hover:text-[#FFE21B] transition-colors"
+          className="text-white text-xl font-medium self-stretch my-auto hover:text-[#FFE21B] transition-colors"
         >
           Career
         </a>
         <a
           href="/events"
-          className="text-[#181818] text-xl font-medium self-stretch my-auto hover:text-[#FFE21B] transition-colors"
+          className="text-white text-xl font-medium self-stretch my-auto hover:text-[#FFE21B] transition-colors"
         >
           Events
         </a>
@@ -128,24 +157,24 @@ const Header = () => {
 
       {/* Mobile and tablet menu dropdown */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 mt-2 bg-[rgba(255,255,255,0.95)] rounded-[20px] p-6 flex flex-col gap-4">
+        <div className="lg:hidden absolute top-full left-0 right-0 mt-2 bg-black bg-opacity-90 rounded-[20px] p-6 flex flex-col gap-4 text-white">
           <a
             href="/"
-            className="text-[#181818] text-xl font-medium hover:text-[#097484] transition-colors"
+            className="text-white text-xl font-medium hover:text-[#FFE21B] transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
             Home
           </a>
           <a
             href="/aboutUs"
-            className="text-[#181818] text-xl font-medium hover:text-[#097484] transition-colors"
+            className="text-white text-xl font-medium hover:text-[#FFE21B] transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
             About
           </a>
           <a
             href="/services"
-            className="text-[#181818] text-xl font-medium hover:text-[#097484] transition-colors"
+            className="text-white text-xl font-medium hover:text-[#FFE21B] transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
             Services
@@ -153,12 +182,12 @@ const Header = () => {
 
           {/* Mobile Resources dropdown */}
           <div className="flex flex-col group">
-            <div className="flex items-center justify-between hover:[&_*]:text-[#FFE21B]">
+          <div className="flex items-center justify-between gap-2 hover:[&_*]:text-[#FFE21B]">
               <button
                 type="button"
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 className={`text-xl font-medium transition-colors bg-transparent border-none cursor-pointer p-0 ${
-                  isDropdownOpen ? "text-[#FFE21B]" : "text-[#181818] group-hover:text-[#FFE21B]"
+                  isDropdownOpen ? "text-[#FFE21B]" : "text-white group-hover:text-[#FFE21B]"
                 }`}
               >
                 Resources
@@ -167,8 +196,8 @@ const Header = () => {
                 type="button"
                 aria-label="Toggle resources submenu"
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                className={`ml-4 transition-colors ${
-                  isDropdownOpen ? "text-[#FFE21B]" : "text-[#181818] group-hover:text-[#FFE21B]"
+              className={`transition-colors ${
+                  isDropdownOpen ? "text-[#FFE21B]" : "text-white group-hover:text-[#FFE21B]"
                 }`}
               >
                 <svg
@@ -193,7 +222,7 @@ const Header = () => {
               <div className="flex flex-col gap-3 mt-3 pl-4">
                 <a
                   href="/resources"
-                  className="text-[#181818] hover:text-[#097484] text-lg transition-colors"
+                  className="text-white hover:text-[#FFE21B] text-lg transition-colors"
                   onClick={() => {
                     setIsMenuOpen(false);
                     setIsDropdownOpen(false);
@@ -203,7 +232,7 @@ const Header = () => {
                 </a>
                 <a
                   href="/resources"
-                  className="text-[#181818] hover:text-[#097484] text-lg transition-colors"
+                  className="text-white hover:text-[#FFE21B] text-lg transition-colors"
                   onClick={() => {
                     setIsMenuOpen(false);
                     setIsDropdownOpen(false);
@@ -213,7 +242,7 @@ const Header = () => {
                 </a>
                 <a
                   href="/resources"
-                  className="text-[#181818] hover:text-[#097484] text-lg transition-colors"
+                  className="text-white hover:text-[#FFE21B] text-lg transition-colors"
                   onClick={() => {
                     setIsMenuOpen(false);
                     setIsDropdownOpen(false);
@@ -223,7 +252,7 @@ const Header = () => {
                 </a>
                 <a
                   href="/resources"
-                  className="text-[#181818] hover:text-[#097484] text-lg transition-colors"
+                  className="text-white hover:text-[#FFE21B] text-lg transition-colors"
                   onClick={() => {
                     setIsMenuOpen(false);
                     setIsDropdownOpen(false);
@@ -237,14 +266,14 @@ const Header = () => {
 
           <a
             href="/careers"
-            className="text-[#181818] text-xl font-medium hover:text-[#097484] transition-colors"
+            className="text-white text-xl font-medium hover:text-[#FFE21B] transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
             Career
           </a>
           <a
             href="/events"
-            className="text-[#181818] text-xl font-medium hover:text-[#097484] transition-colors"
+            className="text-white text-xl font-medium hover:text-[#FFE21B] transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
             Events

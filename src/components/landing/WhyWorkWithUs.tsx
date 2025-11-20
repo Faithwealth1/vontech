@@ -27,42 +27,58 @@ const Reason: React.FC<ReasonProps> = ({ title, description }) => {
 };
 
 const WhyWorkWithUs: React.FC = () => {
-  const reasons = [
-    {
-      title: "Innovation at the Core",
-      description: "We are born in the cloud, and innovation drives everything we do. Join a team that thrives on exploring cutting-edge technologies and solving complex challenges"
-    },
-    {
-      title: "Diverse Opportunities",
-      description: "Whether you're a cloud architect, developer, data analyst, or IT strategist, Vontech offers a wide range of career paths tailored to your skills and aspirations."
-    },
-    {
-      title: "Professional Growth",
-      description: "At Vontech, we invest in our people. Benefit from mentorship, on-the-job training, certifications, and career development opportunities that keep you ahead of the curve."
-    },
-    {
-      title: "Collaborative Culture",
-      description: "Work in an environment where collaboration, respect, and teamwork are valued. Together, we foster a workplace where every voice matters and contributions are celebrated."
-    },
-    {
-      title: "Global Impact",
-      description: "Be part of a company that helps businesses worldwide unlock the full potential of the cloud, driving innovation and delivering incredible experiences across industries."
-    }
+  const reasonRows = [
+    [
+      {
+        title: "Innovation at the Core",
+        description:
+          "We are born in the cloud, and innovation drives everything we do. Join a team that thrives on exploring cutting-edge technologies and solving complex challenges"
+      },
+      {
+        title: "Diverse Opportunities",
+        description:
+          "Whether you're a cloud architect, developer, data analyst, or IT strategist, Vontech offers a wide range of career paths tailored to your skills and aspirations."
+      },
+      {
+        title: "Professional Growth",
+        description:
+          "At Vontech, we invest in our people. Benefit from mentorship, on-the-job training, certifications, and career development opportunities that keep you ahead of the curve."
+      }
+    ],
+    [
+      {
+        title: "Collaborative Structure",
+        description:
+          "Work in an environment where collaboration, respect, and teamwork are valued. Together, we foster a workplace where every voice matters and contributions are celebrated."
+      },
+      {
+        title: "Global Impact",
+        description:
+          "Be part of a company that helps businesses worldwide unlock the full potential of the cloud, driving innovation and delivering incredible experiences across industries."
+      }
+    ]
   ];
 
   return (
     <section className="justify-center items-stretch z-0 flex w-full flex-col overflow-hidden bg-white px-20 py-[60px] max-md:max-w-full max-md:px-5">
       <div className="flex w-full flex-col items-stretch max-md:max-w-full">
-        <h2 className="text-4xl font-bold leading-none bg-clip-text self-center">
+        <h2 className="text-4xl font-bold leading-none bg-clip-text text-[#097484] self-center">
           Why Work With Us?
         </h2>
-        <div className="flex w-full items-center gap-[60px_40px] text-[#393C3D] justify-center flex-wrap mt-[60px] max-md:max-w-full max-md:mt-10">
-          {reasons.map((reason, index) => (
-            <Reason
-              key={index}
-              title={reason.title}
-              description={reason.description}
-            />
+        <div className="flex w-full flex-col gap-10 text-[#393C3D] mt-[60px] max-md:max-w-full max-md:mt-10">
+          {reasonRows.map((row, rowIndex) => (
+            <div
+              key={rowIndex}
+              className="flex w-full items-start gap-[60px_40px] justify-center flex-wrap"
+            >
+              {row.map((reason, index) => (
+                <Reason
+                  key={`${rowIndex}-${index}`}
+                  title={reason.title}
+                  description={reason.description}
+                />
+              ))}
+            </div>
           ))}
         </div>
       </div>

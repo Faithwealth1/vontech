@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import Header from '@/components/landing/Header';
-import HeroSection from '@/components/landing/HeroSection';
-import SponsorsSection from '@/components/landing/SponsorsSection';
-import CTASection from '@/components/landing/CTASection';
-import AboutSection from '@/components/landing/AboutSection';
-import WhyChooseSection from '@/components/landing/WhyChooseSection';
-import ServicesSection from '@/components/landing/ServicesSection';
-import MetricsSection from '@/components/landing/MetricsSection';
-import TestimonialsSection from '@/components/landing/TestimonialsSection';
 import Footer from '@/components/landing/Footer';
+import HeroSection from '@/components/landing/HeroSection';
+
+const SponsorsSection = lazy(() => import('@/components/landing/SponsorsSection'));
+const CTASection = lazy(() => import('@/components/landing/CTASection'));
+const AboutSection = lazy(() => import('@/components/landing/AboutSection'));
+const WhyChooseSection = lazy(() => import('@/components/landing/WhyChooseSection'));
+const ServicesSection = lazy(() => import('@/components/landing/ServicesSection'));
+const MetricsSection = lazy(() => import('@/components/landing/MetricsSection'));
+const TestimonialsSection = lazy(() => import('@/components/landing/TestimonialsSection'));
 
 const Index = () => {
   return (
@@ -17,13 +18,15 @@ const Index = () => {
       
       <main>
         <HeroSection />
-        <SponsorsSection />
-        <CTASection />
-        <AboutSection />
-        <WhyChooseSection />
-        <ServicesSection />
-        <MetricsSection />
-        <TestimonialsSection />
+        <Suspense fallback={<div className="py-10 text-center text-[#097484]">Loading experience…</div>}>
+          <SponsorsSection />
+          <CTASection />
+          <AboutSection />
+          <WhyChooseSection />
+          <ServicesSection />
+          <MetricsSection />
+          <TestimonialsSection />
+        </Suspense>
       </main>
       
       <Footer />

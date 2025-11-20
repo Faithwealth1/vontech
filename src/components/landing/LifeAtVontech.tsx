@@ -46,7 +46,7 @@ const LifeAtVontech: React.FC = () => {
     <section className="z-0 w-full bg-white pt-[60px] pb-[120px] px-20 max-md:max-w-full max-md:pb-[100px] max-md:px-5">
       <div className="w-full max-md:max-w-full">
         <div className="w-full text-center max-md:max-w-full">
-          <h2 className="text-4xl font-bold leading-none bg-clip-text max-md:max-w-full">
+          <h2 className="text-4xl font-bold leading-none bg-clip-text text-[#097484] max-md:max-w-full">
             Life at Vontech Group
           </h2>
           <p className="text-[#393C3D] text-lg font-normal mt-2 max-md:max-w-full">

@@ -12,6 +12,7 @@ interface ServiceSectionProps {
   imageSrc: string;
   imageAlt: string;
   imageOnLeft?: boolean;
+  headingClassName?: string;
 }
 
 const ServiceSection: React.FC<ServiceSectionProps> = ({
@@ -20,13 +21,14 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
   checkPoints,
   imageSrc,
   imageAlt,
-  imageOnLeft = true
+  imageOnLeft = true,
+  headingClassName = ""
 }) => {
   const content = (
     <>
       <div className="w-full max-md:max-w-full">
         <div className="w-full text-4xl font-bold leading-none max-md:max-w-full">
-          <h2 className="bg-clip-text max-md:max-w-full">
+          <h2 className={`max-md:max-w-full ${headingClassName}`}>
             {title}
           </h2>
           <div className="min-h-0.5 w-[94px] bg-[#181818] mt-2 border-[rgba(24,24,24,1)] border-solid border-2" />

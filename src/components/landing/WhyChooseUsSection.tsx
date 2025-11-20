@@ -23,7 +23,7 @@ import { FeatureCard } from '../ui/FeatureCard';
   return (
     <section className="z-0 w-full text-center bg-[#FBFBFB] pt-[60px] pb-[120px] px-20 max-md:max-w-full max-md:pb-[100px] max-md:px-5">
       <div className="flex w-full flex-col items-stretch max-md:max-w-full">
-        <h2 className="text-4xl font-bold leading-none bg-clip-text max-md:max-w-full">
+        <h2 className="text-4xl font-bold leading-none text-[#097484] max-md:max-w-full">
           Why Choose VonTech
         </h2>
         <div className="flex w-full items-center gap-6 justify-center flex-wrap mt-[60px] max-md:max-w-full max-md:mt-10">

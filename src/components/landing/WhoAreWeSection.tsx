@@ -11,7 +11,7 @@ const WhoWeAreSection: React.FC = () => {
         />
         <article className="self-stretch min-w-60 grow shrink w-[455px] my-auto max-md:max-w-full">
           <header className="w-full text-4xl font-bold leading-none max-md:max-w-full">
-            <h2 className="bg-clip-text max-md:max-w-full">Who We Are</h2>
+            <h2 className="text-[#097484] max-md:max-w-full">Who We Are</h2>
             <div className="min-h-0.5 w-[90px] bg-[#181818] mt-2 border-[rgba(24,24,24,1)] border-solid border-2" />
           </header>
           <p className="text-[#393C3D] text-xl font-medium leading-[30px] mt-10 max-md:max-w-full">

@@ -18,7 +18,7 @@ const WhyChooseSection = () => {
           className="absolute h-full w-full object-cover inset-0"
         />
         <div className="relative w-[683px] max-w-full">
-          <h2 className="bg-clip-text bg-[linear-gradient(180deg,#294C3C_0%,#097484_100%)] ml-[60px] max-md:max-w-full">
+          <h2 className="ml-[60px] text-[#097484] max-md:max-w-full">
             Why Choose Vontech for Your Industry?
           </h2>
           <img

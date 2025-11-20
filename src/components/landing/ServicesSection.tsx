@@ -28,7 +28,7 @@ const ServicesSection = () => {
         className="w-full h-auto object-cover mb-6 select-none pointer-events-none"
       />
       <div className="w-full max-md:max-w-full">
-        <h2 className="text-center text-4xl font-bold leading-none bg-clip-text max-md:max-w-full">
+        <h2 className="text-center text-4xl font-bold leading-none text-[#097484] max-md:max-w-full">
           Explore Our Work
         </h2>
         

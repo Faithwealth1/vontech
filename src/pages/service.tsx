@@ -5,15 +5,15 @@ import IndustryCard from '@/components/landing/IndustryCard';
 import FeatureCard from '@/components/landing/FeatureCard';
 import Footer from '@/components/landing/Footer';
 const checkIcon = "/Check.png";
-const cardBanking = "/Card_banking.png";
-const healthCard = "/health.png";
-const retailCard = "/retail.png";
-const manufacturingCard = "/manufacturing.png";
-const educationCard = "/education.png";
-const technologyCard = "/technology.png";
-const card1 ="/card 1.png";
-const card2 = "/card 2.png";
-const card3 = "/card 3.png";
+const cardBankingIcon = "/icon4.png";
+const healthCardIcon = "/icon5.png";
+const retailCardIcon = "/icon6.png";
+const manufacturingCardIcon = "/icon7.png";
+const educationCardIcon = "/icon8.png";
+const technologyCardIcon = "/icon9.png";
+const iconLan = "/lan.png";
+const icon2 = "/icon2.png";
+const icon3 = "/icon3.png";
 const ctaImage = "/cta.png";
 
 const Index = () => {
@@ -55,43 +55,67 @@ const Index = () => {
 
   const industries = [
     {
-      imageSrc: cardBanking,
-      alt: "Banking & Finance"
+      icon: cardBankingIcon,
+      category: "Banking & Finance",
+      title: "Secure and Scalable Solutions for Financial Growth",
+      description:
+        "We enable financial institutions to streamline operations, enhance customer experiences, and maintain regulatory compliance with robust cloud and IT solutions."
     },
     {
-      imageSrc: healthCard,
-      alt: "Healthcare"
+      icon: healthCardIcon,
+      category: "Healthcare",
+      title: "Transforming Patient Care Through Technology",
+      description:
+        "Our cloud solutions help healthcare providers enhance patient outcomes, protect sensitive data, and optimize operations."
     },
     {
-      imageSrc: retailCard,
-      alt: "Retail & E-Commerce"
+      icon: retailCardIcon,
+      category: "Retail & E-Commerce",
+      title: "Empowering Retailers in the Digital Age",
+      description:
+        "From inventory management to personalized customer experiences, we provide solutions that help retailers adapt and thrive."
     },
     {
-      imageSrc: manufacturingCard,
-      alt: "Manufacturing"
+      icon: manufacturingCardIcon,
+      category: "Manufacturing",
+      title: "Optimizing Operations for Greater Efficiency",
+      description:
+        "Vontech helps manufacturers leverage technology to streamline processes, reduce costs, and enhance productivity."
     },
     {
-      imageSrc: educationCard,
-      alt: "Education"
+      icon: educationCardIcon,
+      category: "Education",
+      title: "Innovative Solutions for Modern Learning",
+      description:
+        "We empower educational institutions to deliver engaging, accessible, and secure learning experiences."
     },
     {
-      imageSrc: technologyCard,
-      alt: "Technology & Startups"
+      icon: technologyCardIcon,
+      category: "Technology & Startups",
+      title: "Fueling Innovation for Tech Companies & Startups",
+      description:
+        "From development environments to scalable hosting, we provide tools and infrastructure to help you succeed."
     }
   ];
 
   const features = [
     {
-      imageSrc: card1,
-      alt: "Expertise in multiple industries"
+      icon: iconLan,
+      title: "Expertise in multiple industries",
+      description:
+        "Our diverse experience across sectors allows us to deliver solutions that align with industry best practices and emerging trends."
     },
     {
-      imageSrc: card2,
-      alt: "Tailored solutions for unique challenges"
+      icon: icon2,
+      title: "Tailored solutions for unique challenges",
+      description:
+        "We design strategies that address your organization's specific needs, ensuring measurable impact and long-term growth."
     },
     {
-      imageSrc: card3,
-      alt: "Proven success with leading organizations"
+      icon: "/icon3.png",
+      title: "Proven success with leading organizations",
+      description:
+        "Our track record with top companies demonstrates our ability to drive transformation and deliver results that matter."
     }
   ];
 
@@ -118,6 +142,7 @@ const Index = () => {
             imageSrc="Cloud managed Service.png"
             imageAlt="Cloud Managed Services"
             imageOnLeft={true}
+            headingClassName="text-[#097484]"
           />
 
           {/* Cloud-Native Development */}
@@ -128,6 +153,7 @@ const Index = () => {
             imageSrc="Cloud-Native development.png"
             imageAlt="Cloud-Native Development"
             imageOnLeft={false}
+            headingClassName="text-[#097484]"
           />
 
           {/* Cloud Migration Services */}
@@ -138,6 +164,7 @@ const Index = () => {
             imageSrc="cloud migration services.png"
             imageAlt="Cloud Migration Services"
             imageOnLeft={true}
+            headingClassName="text-[#097484]"
           />
 
           {/* IoT Solutions */}
@@ -148,6 +175,7 @@ const Index = () => {
             imageSrc="internet of things.png"
             imageAlt="Internet of Things (IoT) Solutions"
             imageOnLeft={true}
+            headingClassName="text-[#097484]"
           />
 
           {/* DevOps Services */}
@@ -163,7 +191,7 @@ const Index = () => {
               <div className="self-stretch flex min-w-60 flex-col items-stretch justify-center w-[574px] my-auto max-md:max-w-full md:order-1 order-1">
                 <div className="w-full max-md:max-w-full">
                   <div className="w-full text-4xl font-bold leading-none max-md:max-w-full">
-                    <h2 className="bg-clip-text max-md:max-w-full">
+                    <h2 className="text-[#097484] max-md:max-w-full">
                       DevOps Services and Solutions
                     </h2>
                     <div className="min-h-0.5 max-w-full w-[126px] bg-[#181818] mt-2 border-[rgba(24,24,24,1)] border-solid border-2" />
@@ -194,13 +222,14 @@ const Index = () => {
             imageSrc="big-data solutions.png"
             imageAlt="Big Data Consulting Services"
             imageOnLeft={true}
+            headingClassName="text-[#097484]"
           />
 
           {/* Industries We Serve */}
           <section className="z-0 w-full bg-[#FBFBFB] pt-[60px] pb-[120px] px-20 max-md:max-w-full max-md:pb-[100px] max-md:px-5">
             <div className="w-full max-md:max-w-full">
               <div className="flex w-full flex-col items-stretch text-center justify-center max-md:max-w-full">
-                <h2 className="text-4xl font-bold leading-none bg-clip-text max-md:max-w-full">
+                <h2 className="text-4xl font-bold leading-none text-[#097484] max-md:max-w-full">
                   Industries We Serve
                 </h2>
                 <p className="text-[#393C3D] text-lg font-normal leading-[27px] self-center w-[688px] mt-2 max-md:max-w-full">
@@ -211,8 +240,10 @@ const Index = () => {
                 {industries.map((industry, index) => (
                   <IndustryCard
                     key={index}
-                    imageSrc={industry.imageSrc}
-                    alt={industry.alt}
+                    icon={industry.icon}
+                    category={industry.category}
+                    title={industry.title}
+                    description={industry.description}
                   />
                 ))}
               </div>
@@ -223,7 +254,7 @@ const Index = () => {
           <section className="z-0 w-full text-center bg-[#FBFBFB] pt-[60px] pb-[120px] px-20 max-md:max-w-full max-md:pb-[100px] max-md:px-5">
             <div className="w-full max-md:max-w-full">
               <div className="flex w-full flex-col items-stretch justify-center max-md:max-w-full">
-                <h2 className="text-4xl font-bold leading-none bg-clip-text max-md:max-w-full">
+                <h2 className="text-4xl font-bold leading-none text-[#097484] max-md:max-w-full">
                   Why Choose Vontech for Your Industry?
                 </h2>
                 <p className="text-[#393C3D] text-lg font-normal leading-[27px] self-center w-[780px] mt-2 max-md:max-w-full">
@@ -234,8 +265,9 @@ const Index = () => {
                 {features.map((feature, index) => (
                   <FeatureCard
                     key={index}
-                    imageSrc={feature.imageSrc}
-                    alt={feature.alt}
+                    icon={feature.icon}
+                    title={feature.title}
+                    description={feature.description}
                   />
                 ))}
               </div>

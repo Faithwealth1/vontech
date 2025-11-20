@@ -26,7 +26,7 @@ export const Testimonials: React.FC = () => {
   return (
     <section className="flex flex-col items-start gap-10 md:gap-20 self-stretch w-full bg-[#FBFBFB] pt-[30px] md:pt-[60px] pb-[60px] md:pb-[120px] px-5 sm:px-10 lg:px-20">
       <div className="flex flex-col items-start gap-8 md:gap-[60px] self-stretch max-w-screen-xl w-full mx-auto my-0">
-        <h2 className="self-stretch text-center text-[28px] md:text-4xl font-bold leading-tight md:leading-[45px] text-[#181818]">
+        <h2 className="self-stretch text-center text-[28px] md:text-4xl font-bold leading-tight md:leading-[45px] text-[#097484]">
           Testimonials
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">

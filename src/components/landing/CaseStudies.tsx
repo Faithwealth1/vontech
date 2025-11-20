@@ -85,8 +85,8 @@ export const CaseStudies: React.FC = () => {
   ];
 
   return (
-    <section className="flex flex-col items-start gap-20 self-stretch w-full bg-[#0A0919] pt-[60px] pb-[120px] px-20 max-md:pt-10 max-md:pb-20 max-md:px-10 max-sm:pt-[30px] max-sm:pb-[60px] max-sm:px-5">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 self-stretch max-w-screen-xl w-full mx-auto my-0">
+    <section className="flex flex-col items-center gap-20 w-full bg-[#0A0919] pt-[60px] pb-[120px] px-6 lg:px-10 max-md:pt-10 max-md:pb-20 max-md:px-5 max-sm:pt-[30px] max-sm:pb-[60px]">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-[1200px] mx-auto">
         {caseStudies.map((study, index) => (
           <div key={index} className="flex justify-center items-stretch">
             <CaseStudyCard

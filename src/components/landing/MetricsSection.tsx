@@ -72,10 +72,11 @@ const Statistics = () => {
           alt="Background pattern"
           className="absolute h-full w-full object-cover inset-0"
         />
-        <h2 className="relative text-[#393C3D] text-4xl font-bold self-center">
+        <div className="relative flex flex-col items-center text-center w-full max-w-[1200px] mx-auto">
+        <h2 className="text-[#097484] text-4xl font-bold">
           Memory in number
         </h2>
-        <div className="relative flex items-center gap-6 justify-between flex-wrap mt-20 max-md:mt-10">
+        <div className="flex items-stretch gap-6 justify-center flex-wrap mt-20 max-md:mt-10">
           {stats.map((stat, index) => (
             <div key={index} className="self-stretch flex min-w-60 flex-col items-stretch justify-center w-[342px] my-auto p-4">
               <div className="text-[rgba(0,128,0,1)] text-5xl font-bold self-center max-md:text-[40px]">
@@ -91,6 +92,7 @@ const Statistics = () => {
               </div>
             </div>
           ))}
+        </div>
         </div>
       </div>
     </section>

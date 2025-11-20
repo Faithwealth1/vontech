@@ -27,7 +27,7 @@ import { ValueCard } from '../ui/ValueCard';
 
   return (
     <section className="justify-center items-stretch z-0 flex w-full flex-col overflow-hidden bg-[#F2F4F3] pt-[60px] pb-[120px] px-20 max-md:max-w-full max-md:pb-[100px] max-md:px-5">
-      <h2 className="text-center text-4xl font-bold leading-none bg-clip-text max-md:max-w-full">
+      <h2 className="text-center text-4xl font-bold leading-none text-[#097484] max-md:max-w-full">
         Our Core Values
       </h2>
       <div className="flex w-full items-center justify-center gap-[40px_60px] flex-wrap mt-[60px] max-md:max-w-full max-md:mt-10">

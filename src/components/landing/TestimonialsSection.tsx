@@ -45,12 +45,12 @@ const TestimonialsSection = () => {
   return (
     <section className="bg-[rgba(242,244,243,1)] z-0 w-full overflow-hidden pt-10 pb-[120px] px-20 max-md:max-w-full max-md:pb-[100px] max-md:px-5">
       <div className="flex w-full flex-col items-stretch max-md:max-w-full">
-        <h2 className="text-center text-4xl font-bold tracking-[-0.1px] bg-clip-text self-center">
+        <h2 className="text-center text-4xl font-bold tracking-[-0.1px] text-[#097484] self-center">
           Client success story
         </h2>
         
         <div className="flex w-full flex-col items-stretch mt-10 max-md:max-w-full">
-          <div className="flex w-full items-center gap-5 justify-center md:overflow-x-auto flex-nowrap max-md:max-w-full max-md:flex-wrap">
+          <div className="flex w-full items-stretch gap-5 md:overflow-x-auto flex-nowrap md:justify-start md:scroll-px-10 md:px-5 max-md:max-w-full max-md:flex-wrap">
             {testimonials.map((testimonial, index) => (
               <article key={index} className="border self-stretch min-w-60 overflow-hidden w-[402px] flex-shrink-0 my-auto px-[22px] py-8 rounded-[20px] border-solid border-[#E0E0E0] hover:shadow-lg transition-shadow max-md:px-5">
                 <blockquote className="text-[#097484] text-base font-normal leading-6">
