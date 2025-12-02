@@ -105,7 +105,7 @@ const Footer = () => {
       
       <div className="absolute z-0 flex w-full max-w-[1440px] items-center text-sm text-white font-medium text-center leading-[1.4] justify-center p-5 border-[rgba(25,25,25,1)] border-t left-1/2 -translate-x-1/2 bottom-0 md:px-10">
         <div className="text-white my-auto md:text-xs text-center">
-          Copywrite © 2025 VonTech Group. All Right Reserved.
+          Copyright © 2025 VonTech Group. All Right Reserved.
         </div>
       </div>
     </footer>
